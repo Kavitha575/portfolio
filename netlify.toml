@@ -1,0 +1,12 @@
+[build]
+  publish = "public"          # Directory where your static files (index.html, style.css, etc.) are located
+  command = ""                # Command to build your project; empty if no build step is required
+
+[functions]
+  directory = "functions"     # Directory where your serverless functions are located
+
+[[redirects]]
+  from = "/*"                # Redirect all requests
+  to = "/index.html"         # Send all requests to index.html (for single-page applications)
+  status = 200                # HTTP status code for the redirect
+  force = true                # Force the redirect even if the destination exists

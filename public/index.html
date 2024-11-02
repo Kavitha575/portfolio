@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jane Doe</h1>
+        <p>Creative Designer specializing in UX/UI Design and Branding.</p>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#bio">Bio</a>
+            <a href="#contact">Contact</a>
+            <button id="export-pdf">Export to PDF</button>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <!-- Project items will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <section id="bio">
+        <h2>Bio</h2>
+        <p>Jane Doe is a passionate designer with over 10 years of experience in creating user-friendly interfaces and impactful brand identities.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="file" name="attachment" accept=".jpg, .jpeg, .png, .pdf">
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
